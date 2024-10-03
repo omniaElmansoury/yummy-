@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="./images/logo.png" />
+    <title>Yummy</title>
+  </head>
+  <body class="bg-black">
+    <div class="layero d-none mt-4">
+      
+      <div class="container">
+        <div class="row">
+        </div>
+      </div>
+    </div>
+    <div class="parent-allmeal d-flex">
+      <div class="parent-header vh-100 d-flex justify-content-between position-fixed"
+      >
+        <div
+          class="side-bar-linkslight d-flex flex-column justify-content-between align-items-start p-3">
+          <div class="links-sidr">
+            <ul class="mt-2">
+              <li class="v h"><a href="" id="search">Search</a></li>
+              <li class="v"><a href=""id="Category">Categories</a></li>
+              <li class="v"><a href="" id="area">Area</a></li>
+              <li class="v"><a href="" id="ingerident">Ingredients</a></li>
+              <li class="v"><a href="" id="contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="links-footer">
+            <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+            <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+            <i class="fa-solid fa-globe" style="color: #ffffff"></i>
+            <p class="text-light">Copyright Bassant Hasseb All Rights Reserved.</p>
+          </div>
+        </div>
+        <div
+          class="side-bar-linksblack p-4 d-flex flex-column justify-content-between align-items-center"
+        >
+          <div class="log-div">
+            <img src="./images/logo.png" class="img-log" alt="" />
+          </div>
+          <div class="close-div">
+            <i
+              class="fa-solid fa-xmark fa-3x close-i d-none"
+              style="color: #050505"
+              ;
+            ></i>
+            <i class="fa-solid fa-bars fa-3x bar-i" style="color: #000000"></i>
+          </div>
+          <div class="icon-div">
+            <i
+              class="fa-solid fa-globe d-block mb-2"
+              style="color: #0c0d0d"
+            ></i>
+            <i
+              class="fa-solid fa-share-nodes d-block"
+              style="color: #000000"
+            ></i>
+          </div>
+        </div>
+      </div>
+      
+      <div class="allmeals p-5">
+        <div class="container conatinermeals">
+          <span class="loader d-none"></span>
+        
+
+          <div class="row g-4">
+          </div>
+        
+          <div class="row rowsearch text-white d-none g-4">  
+            <form action="" class="d-none position-absolute top-0 me-2 ">
+            <input type="text" name="" id="" class="word" placeholder="Search By Name">
+            <input type="text" name="" id="" class="letter" placeholder="Search By First Letter">
+          </form>
+          <div class="row-deserch d-flex flex-wrap g-1 mt-5">
+          </div>
+          <div class="row row-searchdetails text-white">
+
+          </div>
+<div class="clear-both"></div>
+        </div>
+        <div class="row row-category g-4 d-none">
+          <div class="row-recat d-flex flex-wrap">
+
+          </div>
+          <div class="row-recato d-flex flex-wrap">
+
+          </div>
+          <div class="row-recatdatalis text-white">
+
+          </div>
+          <div class="clear-both"></div>
+          </div>
+          <div class="row row-area d-none ms-5">
+<div class="row row-counrty"></div>
+<div class="row row-counrtydetails"></div>
+<div class="row row-dtailspecifi text-white"></div>
+          </div>
+          <div class="row row-ingerdient g-4 d-none">
+            <div class="row row-inger"></div>
+            <div class="row row-ingersmall"></div>
+            <div class="row row-ingersmalldtalis"></div>
+          </div>
+
+          <div class="row contact d-none mt-5">
+            <div class="row contacts g-4">
+              <div class="col-md-6">
+                  <input id="nameInput" onkeyup="inputsValidation()" type="text" class="form-control" placeholder="Enter Your Name" fdprocessedid="rzt3e">
+                  <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                      Special characters and numbers not allowed
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <input id="emailInput" onkeyup="inputsValidation()" type="email" class="form-control " placeholder="Enter Your Email" fdprocessedid="hmcy9">
+                  <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                      Email not valid *exemple@yyy.zzz
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <input id="phoneInput" onkeyup="inputsValidation()" type="text" class="form-control " placeholder="Enter Your Phone" fdprocessedid="yzjcsk">
+                  <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                      Enter valid Phone Number
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <input id="ageInput" onkeyup="inputsValidation()" type="number" class="form-control " placeholder="Enter Your Age" fdprocessedid="3j78a9">
+                  <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                      Enter valid age
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <input id="passwordInput" onkeyup="inputsValidation()" type="password" class="form-control " placeholder="Enter Your Password" fdprocessedid="w7ul2l">
+                  <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                      Enter valid password *Minimum eight characters, at least one letter and one number:*
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <input id="repasswordInput" onkeyup="inputsValidation()" type="password" class="form-control " placeholder="Repassword" fdprocessedid="9eevbl">
+                  <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                      Enter valid repassword 
+                  </div>
+              </div>
+          </div>
+          </div>
+          <button id="submitBtn" class="btn btn-outline-danger px-2 mt-3 d-none m-auto">Submit</button>
+        </div>
+      </div>
+
+      
+    </div>  
+   <script>"./js/index.js"</script>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
